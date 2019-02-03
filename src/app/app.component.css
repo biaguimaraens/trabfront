@@ -6,11 +6,11 @@ body{
   margin-top:-20vh;
   padding:0vh
 }
-.ala{
+/*Espacamento pra não ficar tudo muito colado*/
+.espacamento{
   height:10px;
-  width:400px;
-
 }
+/*"Embelezamento" da tab*/
 .tab {
   margin-top:50vh;
   overflow: hidden;

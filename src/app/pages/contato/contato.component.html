@@ -1,24 +1,30 @@
 <div class="animated fadeIn row col s12 offset-s2" id="row1">
   <h4>Fale conosco!</h4>
+  <!--Início do form-->
   <div class="row col l12">
     <form #login="ngForm" (ngSubmit)="onSubmit(login)" >
       <div class="row">
+    <!--Para preencher com nome-->
         <div class="input-field col l4 offset-l2 m12 offset-m6 s12">
           <input id="nome" type="text" name="nome" ngModel required #nome="ngModel">
           <label for="nome">Nome</label>
         </div>
+    <!--Para preencher com email-->
         <div class="input-field col l4 m12 offset-m6 s12">
           <input id="email" type="text" name="email" ngModel required #email="ngModel">
           <label for="email">Email</label>
         </div>
       </div>
+    <!--Para preencher com comentário-->
       <div class="input-field col l8 offset-l2 m12 offset-m6 s12">
         <input id="texto" type="text" name="texto" ngModel required #texto="ngModel">
         <label for="texto">Diga Algo!</label>
       </div>
       <div class="row col l4 offset-l4 m12 offset-m6 s12">
+      <!--Botão para submissão do formulário-->
         <button class="waves-effect waves-light btn" type="submit" [disabled]="login.invalid">ENVIAR</button>
       </div>
+      <!--condição para liberar o botão de submeter-->
       <div *ngIf="nome.touched && nome.invalid || email.touched && email.invalid || texto.touched && texto.invalid">
         <p>Campo(s) obrigatório(s)!</p>
       </div>

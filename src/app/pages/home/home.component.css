@@ -1,3 +1,4 @@
+/*Para o texto da página*/
 #row{
   margin-top:0vh;
   width:100%;
@@ -8,6 +9,7 @@
   padding-right: 10vh;
   font-family: 'Raleway', sans-serif;
 }
+/*Estilização do nome dos animais*/
 .tituloHome{
   color: rgb(249, 168, 37);
   font-family: 'Raleway', sans-serif;

@@ -16,10 +16,4 @@ export class ContatoComponent implements OnInit {
   onSubmit(login){
     console.log(login);
   }
-  checkPassword(senha){
-    if(senha.value.length<=6)
-      this.passwordError = true;
-    else
-      this.passwordError = false;
-  }
 }
