@@ -1,0 +1,10 @@
+nav{
+  margin-top:-15vh;
+}
+.titulo{
+  font-family: 'Homemade Apple', cursive;
+  font-size: 6vh;
+  font-weight: bold;
+  padding:13vh;
+  text-shadow: 2px 2px rgb(210,105,30);
+}
